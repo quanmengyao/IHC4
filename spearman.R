@@ -1,6 +1,6 @@
 library(readxl)
 library(dplyr)
-setwd("/Users/celeste/PhD/Rcode/Training/IHC4_project")
+
 data <- read_excel("spearman.xlsx")
 colnames(data)
 ihc4 <- data$IHC4_score
