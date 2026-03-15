@@ -2,9 +2,9 @@
 library(survival)
 library(dplyr)
 library(readxl)
-setwd("/Users/celeste/PhD/Rcode/Training/IHC4_project")
+
 data <- read_excel("uni_cox.xlsx")
-data$time_months <- data$time_months / 30.4
+
 data$patient_id <- as.character(data$patient_id)
 str(data)
 vars <- c(
